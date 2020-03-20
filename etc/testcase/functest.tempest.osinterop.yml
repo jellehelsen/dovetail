@@ -24,10 +24,12 @@ functest.tempest.osinterop:
       - functest.log
       - refstack_defcore/rally.log
       - refstack_defcore/tempest-report.html
+      - refstack_defcore/tempest-report.xml
     dest_archive_files:
       - tempest_logs/functest.tempest.osinterop.functest.log
       - tempest_logs/functest.tempest.osinterop.log
       - tempest_logs/functest.tempest.osinterop.html
+      - tempest_logs/functest.tempest.osinterop.xml
     check_results_files:
       - 'functest_results.txt'
     portal_key_file: tempest_logs/functest.tempest.osinterop.html

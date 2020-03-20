@@ -21,10 +21,12 @@ functest.tempest.networking_sfc:
       - functest.log
       - networking-sfc/rally.log
       - networking-sfc/tempest-report.html
+      - networking-sfc/tempest-report.xml
     dest_archive_files:
       - tempest_logs/functest.tempest.networking_sfc.functest.log
       - tempest_logs/functest.tempest.networking_sfc.log
       - tempest_logs/functest.tempest.networking_sfc.html
+      - tempest_logs/functest.tempest.networking_sfc.xml
     check_results_files:
       - 'functest_results.txt'
     portal_key_file: tempest_logs/functest.tempest.networking_sfc.html

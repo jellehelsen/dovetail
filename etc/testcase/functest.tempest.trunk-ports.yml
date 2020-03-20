@@ -22,10 +22,12 @@ functest.tempest.neutron_trunk_ports:
       - functest.log
       - neutron_trunk/rally.log
       - neutron_trunk/tempest-report.html
+      - neutron_trunk/tempest-report.xml
     dest_archive_files:
       - tempest_logs/functest.tempest.neutron_trunk_ports.functest.log
       - tempest_logs/functest.tempest.neutron_trunk_ports.log
       - tempest_logs/functest.tempest.neutron_trunk_ports.html
+      - tempest_logs/functest.tempest.neutron_trunk_ports.xml
     check_results_files:
       - 'functest_results.txt'
     portal_key_file: tempest_logs/functest.tempest.neutron_trunk_ports.html

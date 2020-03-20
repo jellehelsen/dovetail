@@ -23,10 +23,12 @@ functest.tempest.ipv6_scenario:
       - functest.log
       - tempest_custom/rally.log
       - tempest_custom/tempest-report.html
+      - tempest_custom/tempest-report.xml
     dest_archive_files:
       - tempest_logs/functest.tempest.ipv6_scenario.functest.log
       - tempest_logs/functest.tempest.ipv6_scenario.log
       - tempest_logs/functest.tempest.ipv6_scenario.html
+      - tempest_logs/functest.tempest.ipv6_scenario.xml
     check_results_files:
       - 'functest_results.txt'
     portal_key_file: tempest_logs/functest.tempest.ipv6_scenario.html

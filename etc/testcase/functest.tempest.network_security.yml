@@ -23,10 +23,12 @@ functest.tempest.network_security:
       - functest.log
       - tempest_custom/rally.log
       - tempest_custom/tempest-report.html
+      - tempest_custom/tempest-report.xml
     dest_archive_files:
       - tempest_logs/functest.tempest.network_security.functest.log
       - tempest_logs/functest.tempest.network_security.log
       - tempest_logs/functest.tempest.network_security.html
+      - tempest_logs/functest.tempest.network_security.xml
     check_results_files:
       - 'functest_results.txt'
     portal_key_file: tempest_logs/functest.tempest.network_security.html

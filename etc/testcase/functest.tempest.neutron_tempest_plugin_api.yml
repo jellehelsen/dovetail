@@ -19,10 +19,12 @@ functest.tempest.neutron_tempest_plugin_api:
       - functest.log
       - neutron-tempest-plugin-api/rally.log
       - neutron-tempest-plugin-api/tempest-report.html
+      - neutron-tempest-plugin-api/tempest-report.xml
     dest_archive_files:
       - neutron_tempest_plugin_api_logs/functest.tempest.neutron_tempest_plugin_api.functest.log
       - neutron_tempest_plugin_api_logs/functest.tempest.neutron_tempest_plugin_api.log
       - neutron_tempest_plugin_api_logs/functest.tempest.neutron_tempest_plugin_api.html
+      - neutron_tempest_plugin_api_logs/functest.tempest.neutron_tempest_plugin_api.xml
     check_results_files:
       - 'functest_results.txt'
     portal_key_file: neutron_tempest_plugin_api_logs/functest.tempest.neutron_tempest_plugin_api.html
