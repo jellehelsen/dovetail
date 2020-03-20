@@ -40,14 +40,12 @@ ENV REPOS_DIR ${HOME}/dovetail
 ENV API_DIR ${REPOS_DIR}/dovetail/api
 WORKDIR $HOME
 
+COPY . /tmp/dovetail
+
 RUN \
     mkdir -p ${REPOS_DIR} \
 && \
-    git init /tmp/dovetail \
-&& \
     (cd /tmp/dovetail && \
-        git fetch --tags https://gerrit.opnfv.org/gerrit/dovetail $BRANCH && \
-        git checkout FETCH_HEAD && \
         pip3 install .) \
 && \
     rm -rf /tmp/dovetail \
