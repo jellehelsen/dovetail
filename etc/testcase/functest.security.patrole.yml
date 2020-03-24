@@ -22,10 +22,12 @@ functest.security.patrole:
       - functest.log
       - patrole/rally.log
       - patrole/tempest-report.html
+      - patrole/tempest-report.xml
     dest_archive_files:
       - security_logs/functest.security.patrole.functest.log
       - security_logs/functest.security.patrole.log
       - security_logs/functest.security.patrole.html
+      - security_logs/functest.security.patrole.xml
     check_results_files:
       - 'functest_results.txt'
     portal_key_file: security_logs/functest.security.patrole.html

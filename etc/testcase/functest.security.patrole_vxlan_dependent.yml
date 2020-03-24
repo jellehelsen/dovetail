@@ -23,10 +23,12 @@ functest.security.patrole_vxlan_dependent:
       - functest.log
       - tempest_custom/rally.log
       - tempest_custom/tempest-report.html
+      - tempest_custom/tempest-report.xml
     dest_archive_files:
       - security_logs/functest.security.patrole_vxlan_dependent.functest.log
       - security_logs/functest.security.patrole_vxlan_dependent.log
       - security_logs/functest.security.patrole_vxlan_dependent.html
+      - security_logs/functest.security.patrole_vxlan_dependent.xml
     check_results_files:
       - 'functest_results.txt'
     portal_key_file: security_logs/functest.security.patrole_vxlan_dependent.html
